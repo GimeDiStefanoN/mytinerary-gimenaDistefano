@@ -1,18 +1,17 @@
 import './App.css'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import Index from './pages/Index/Index'
 
 function App() {
 
   return (
     <>
-      <header>
-        <h1>Aca el header</h1>
-      </header>
-      <main>
-        <h1>aca el main</h1>
-      </main>
-      <footer>
-        <h1>aca el footer</h1>
-      </footer>
+      <Header></Header>
+
+      <Index></Index>
+
+      <Footer></Footer>
     </>
   )
 }
