@@ -1,9 +1,12 @@
-import Hero from '../../components/Hero/Hero'
+import Hero from '../../components/Hero/Hero';
+import Carrousel from '../../components/Carrousel/Carrousel';
+
 function Index() {
     return (
         <>
             <main>
-                <Hero></Hero>
+                <Hero/>
+                <Carrousel/>
             </main>
         </>
     )

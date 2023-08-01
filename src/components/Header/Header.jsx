@@ -1,18 +1,29 @@
+import Logo from '/Logo.png';
+import './Header.css';
+import Navbar from '../Navbar/Navbar';
+
 function Header() {
+    const linksForNavbar1 = ['Home', 'Cities'];
+
     return (
         <>
             <header>
                 <div className="navbar bg-base-100">
+                    {/* LOGO */}
                     <div className="flex-1">
-                        <a className="btn btn-ghost normal-case text-xl">MyTinerary</a>
+                        <img className='logo' src={Logo} alt="" />
                     </div>
                     <div className="flex-none gap-2">
-                        <div className="form-control">
+                        {/* BUSCADOR */}
+                        {/* <div className="form-control">
                             <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
-                        </div>
-                        <div className="dropdown dropdown-end">
-                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                <div className="w-10 rounded-full">
+                        </div> */}
+                        <Navbar links={linksForNavbar1} />
+
+                        {/* BOTON LOGIN */}
+                        <div className="dropdown dropdown-end" >
+                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar" >
+                                <div className="w-10 rounded-full" >
                                     <img src="https://cdn-icons-png.flaticon.com/512/1783/1783012.png" />
                                 </div>
                             </label>

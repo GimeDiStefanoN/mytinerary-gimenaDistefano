@@ -1,0 +1,13 @@
+.titleCarousel{
+    color: #A10B61;
+    text-align: center;
+    font-size: 3rem !important;
+    margin: 1rem 0;
+}
+.carousel-item{
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important; 
+    grid-template-rows: 2fr !important; 
+    gap: 10px !important;
+    padding:1rem
+}
