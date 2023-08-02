@@ -1,0 +1,77 @@
+{
+    "cities": [
+      {
+        "id": 1,
+        "nombre": "Londres",
+        "pais": "Reino Unido",
+        "img": "/Places/Londres.png"
+      },
+      {
+        "id": 2,
+        "nombre": "Grecia",
+        "pais": "Grecia",
+        "img": "/Places/Grecia.png"
+      },
+      {
+        "id": 3,
+        "nombre": "Roma",
+        "pais": "Italia",
+        "img": "/Places/Roma.png"
+      },
+      {
+        "id": 4,
+        "nombre": "Paris",
+        "pais": "Francia",
+        "img": "/Places/Paris.png"
+      },
+      {
+        "id": 5,
+        "nombre": "Capadoccia",
+        "pais": "Turquia",
+        "img": "/Places/Turquia.png"
+      },
+      {
+        "id": 6,
+        "nombre": "Tokyo",
+        "pais": "Japon",
+        "img": "/Places/Japon.png"
+      },
+      {
+        "id": 7,
+        "nombre": "Sydney",
+        "pais": "Australia",
+        "img": "/Places/Sydney.png"
+      },
+      {
+        "id": 8,
+        "nombre": "China",
+        "pais": "China",
+        "img": "/Places/China.png"
+      },
+      {
+        "id": 9,
+        "nombre": "Usuahia",
+        "pais": "Argentina",
+        "img": "/Places/Argentina.png"
+      },
+      {
+        "id": 10,
+        "nombre": "Cartagena",
+        "pais": "Colombia",
+        "img": "/Places/Colombia.png"
+      },
+      {
+        "id": 11,
+        "nombre": "Rio de Janeiro",
+        "pais": "Brasil",
+        "img": "/Places/Brasil.png"
+      },
+      {
+        "id": 12,
+        "nombre": "New York",
+        "pais": "EEUU",
+        "img": "/Places/Eeuu.png"
+      }
+      
+    ]
+  }
