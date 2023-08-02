@@ -3,6 +3,7 @@
     text-align: center;
     font-size: 3rem !important;
     margin: 1rem 0;
+    
 }
 .carousel-item{
     display: grid !important;
@@ -10,4 +11,26 @@
     grid-template-rows: 2fr !important; 
     gap: 10px !important;
     padding:1rem
+}
+.w-full {
+    width: 95%;
+}
+.image-container {
+  position: relative;
+}
+
+.city-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+}
+.cityCarrousel{
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    margin: 0;
 }
