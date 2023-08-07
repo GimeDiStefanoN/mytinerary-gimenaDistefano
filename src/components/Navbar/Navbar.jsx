@@ -1,16 +1,12 @@
-import React from 'react';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 function Navbar({ links }) {
     return (
         <>
-            <div className="flex-none">
-                <ul className="menu menu-horizontal px-1">
-                    {links.map((linkText, index) => (
-                        <li key={index}><a className="nav-link">{linkText}</a></li>
-                    ))}
-                </ul>
-            </div>
+            {links.map((link, index) => (
+                <li key={index}><Link to={link.to} className="nav-link">{link.title}</Link></li>
+            ))}      
         </>
     )
 }
