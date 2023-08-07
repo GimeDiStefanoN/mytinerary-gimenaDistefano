@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import Button from '../Button/Button';
+import { Link } from 'react-router-dom';
 
 function Hero() {
     return (
@@ -10,7 +11,7 @@ function Hero() {
                 <div className="hero-content text-center text-neutral-content">
                     <div className="max-w-md">
                         <p className="mb-5 hero-slogan text-3xl font-bold">Find your perfect trip, designed by insiders who know and love their cities!</p>
-                        <Button text="Explore the cities" />
+                        <Link to='/cities'><Button text="Explore the cities" /> </Link>
                     </div>
                 </div>
             </div>

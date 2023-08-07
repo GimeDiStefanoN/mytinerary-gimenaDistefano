@@ -1,13 +1,14 @@
 import './App.css'
-import Main from './layouts/Main/Main';
-import Index from './pages/Index/Index'
+import { RouterProvider } from 'react-router-dom';
+import  router from './router/router';
+
 
 function App() {
   return (
     <>
-      <Main>
-        <Index></Index>
-      </Main>
+    <RouterProvider router={router}>
+     
+    </RouterProvider>
     </>
   )
 }
