@@ -8,12 +8,22 @@
     margin: 0 5px;
     position: relative;
     display: inline-block;
+    height: 61px;
+    line-height: 61px;
 }
 ul li:hover > .nav-link{
     color: #A10B61;
     text-transform: scale(1.2);
 }
 
+.navbar-item{
+    height: 61px
+}
+.Icons{
+    filter: invert(1);
+    height: 50px;
+
+}
 @media (max-width: 640px) { /* Media query para pantallas pequeñas */
     .menu-horizontal {
         flex-direction: column !important; /* Cambiará a columna en pantallas pequeñas */

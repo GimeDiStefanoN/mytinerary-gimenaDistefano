@@ -1,0 +1,10 @@
+.Containloading{
+  display: grid;
+  place-items: center;
+}
+.loadingImg{
+  width: 600px;
+  height: 300px;
+  margin: 0 auto;
+  
+}
