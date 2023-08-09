@@ -7,7 +7,7 @@ function Header() {
     const linksForNavbar1 = [
         { title: 'Home', to: '/' },
         { title: 'Cities', to: '/cities' },
-        { title: 'Login', to: '/login' },
+        { title: 'Login', to: '/login', icon: '/Icons/avatarLogin.png' },
         { title: 'SignUp', to: '/signup' }
     ];
 

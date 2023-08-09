@@ -5,16 +5,22 @@
     margin: 1rem 0;
     
 }
+
 .carousel-item{
     display: grid !important;
     grid-template-columns: repeat(2, 1fr) !important; 
     grid-template-rows: 2fr !important; 
     gap: 10px !important;
-    padding:1rem
+    padding:1rem;
+    transition: transform 2s ease-in-out;
+    animation: slide 10s infinite;
 }
+
 .w-full {
     width: 95%;
 }
+
+
 .image-container {
   position: relative;
 }
@@ -34,3 +40,19 @@
     font-weight: 600;
     margin: 0;
 }
+
+@keyframes slide {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 80% {
+    transform: translateX(-100%);
+  }
+  40%, 60% {
+    transform: translateX(-200%);
+  }
+}
+
+
+
+
