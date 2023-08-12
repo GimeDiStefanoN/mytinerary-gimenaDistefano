@@ -26,11 +26,11 @@ const Carrousel = () => {
           {slides.map((slide) => (
             <div key={slide.id} id={slide.id} className="carousel-item relative w-full">
               {slide.cities.map((city) => (
-                <div key={city.nombre} className="image-container">
-                  <img src={city.img} className="w-full" alt={city.nombre} />
+                <div key={city.name} className="image-container">
+                  <img src={city.png} className="w-full" alt={city.alt} />
                   <div className="city-overlay">
-                    <h3 className='cityCarrousel'>{city.nombre}</h3>
-                    <p>{city.pais}</p>
+                    <h3 className='cityCarrousel'>{city.name}</h3>
+                    <p>{city.country}</p>
                   </div>
                 </div>
               ))}

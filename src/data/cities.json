@@ -2,76 +2,183 @@
     "cities": [
       {
         "id": 1,
-        "nombre": "Londres",
-        "pais": "Reino Unido",
-        "img": "/Places/Londres.png"
+        "name": "London",
+        "country": "United Kingdom",
+        "region":"British Isles",
+        "subregion":"Western Europe",
+        "png": "/Places/Londres.png",
+        "alt": "Big Ben in London",
+        "description": "London is rich in culture and history, from its tea culture and famous breakfast to numerous old buildings and streets dating from various periods. We've all heard of well-known Big Ben, Buckingham Palace, and Westminister Palate, but this city has much more to offer.",
+        "currencies": "sterling",
+        "language": "English"
       },
       {
         "id": 2,
-        "nombre": "Grecia",
-        "pais": "Grecia",
-        "img": "/Places/Grecia.png"
+        "name": "Athens",
+        "country": "Greece",
+        "region":"Europe",
+        "subregion":"Southern Europe",
+        "png": "/Places/Grecia.png",
+        "alt": "Santorini beach",
+        "description": "The capital of Greece is full of ancient monuments, temples, ruins and churches. For lovers of ancient Greece, this city is a paradise. You really have to see the Acropolis. This hill in the middle of Athens has some of the most important archaeological monuments.",
+        "currencies": "Euro",
+        "language": "Greek"
       },
       {
         "id": 3,
-        "nombre": "Roma",
-        "pais": "Italia",
-        "img": "/Places/Roma.png"
+        "name": "Rome",
+        "country": "Italy",
+        "region":"Europe",
+        "subregion":"Southern Europe",
+        "png": "/Places/Roma.png",
+        "alt": "Colosseum",
+        "description": "It has beautiful scenery ranging from its scenic coastal areas to its colourful mountain ranges. It has a vast wealth of culture, architecture and ancient sites. It has modern cities that embody contemporary Italy, and don't forget Italy's gifts to the world's taste buds, its wonderful cuisine and wines.",
+        "currencies": "Euro",
+        "language": "Italian"
       },
       {
         "id": 4,
-        "nombre": "Paris",
-        "pais": "Francia",
-        "img": "/Places/Paris.png"
+        "name": "Paris",
+        "country": "France",
+        "region":"Europe",
+        "subregion":"Western Europe",
+        "png": "/Places/Paris.png",
+        "alt": "Eiffel Tower",
+        "description": "You will find interesting museums, wonderful historic sites, places for shopping with fashionable goods in Paris. There are many great places for alpine skiing in the mountains. On the French Riviera (Côte d'Azur) tourists will meet warm Mediterranean Sea and mild climate.",
+        "currencies": "Euro",
+        "language": "French"
       },
       {
         "id": 5,
-        "nombre": "Capadoccia",
-        "pais": "Turquia",
-        "img": "/Places/Turquia.png"
+        "name": "Capadoccia",
+        "country": "Turkey",
+        "region":"America",
+        "subregion":"Asia Minor",
+        "png": "/Places/Turquia.png",
+        "alt": "hot air balloon ride at sunrise.",
+        "description": "Cappadocia region is the place where nature and history come together most beautifully within the world. While geographic events are forming Peribacalari (fairy chimneys), during the historical period, humans had carried the signs of thousand years old civilizations with carving houses and churches within these earth pillars and decorating them with frisks.",
+        "currencies": "Turkish lira",
+        "language": "Turkish"
       },
       {
         "id": 6,
-        "nombre": "Tokyo",
-        "pais": "Japon",
-        "img": "/Places/Japon.png"
+        "name": "Tokyo",
+        "country": "Japan",
+        "region":"Asia",
+        "subregion":"Northeast Asia",
+        "png": "/Places/Japon.png",
+        "alt": "Ginza street",
+        "description": "Tokyo is known for its fashion and shopping, from the trendy shopping districts of Harajuku and Shibuya, to the luxury flagships of Ginza. Shinjuku is the thriving business district; a mix of gleaming skyscrapers and atmospheric back streets with tiny bars.",
+        "currencies": "Yen",
+        "language": "Japanese"
       },
       {
         "id": 7,
-        "nombre": "Sydney",
-        "pais": "Australia",
-        "img": "/Places/Sydney.png"
+        "name": "Sydney",
+        "country": "Australia",
+        "region":"Oceanía",
+        "subregion":"New South Wales coast",
+        "png": "/Places/Sydney.png",
+        "alt": "Opera House",
+        "description": "Sydney is its vibrant capital and the largest city in Australia. Marvel at the iconic Sydney Opera House and Sydney Harbour Bridge, catch the ferry to Manly, have a swim at Bondi Beach and stroll through the historic Rocks district.",
+        "currencies": "Australian Dollar",
+        "language": "English"
       },
       {
         "id": 8,
-        "nombre": "China",
-        "pais": "China",
-        "img": "/Places/China.png"
+        "name": "Beijing",
+        "country": "China",
+        "region":"Asia",
+        "subregion":"North Asia",
+        "png": "/Places/China.png",
+        "alt": "chinese wall",
+        "description": "Beijing is home to many national monuments and museums and has seven UNESCO World Heritage Sites—the Forbidden City, Temple of Heaven, Summer Palace, Ming Tombs, Zhoukoudian, and parts of the Great Wall and the Grand Canal",
+        "currencies": "Yuan",
+        "language": "pekinés, Mandarin Chinese"
       },
       {
         "id": 9,
-        "nombre": "Usuahia",
-        "pais": "Argentina",
-        "img": "/Places/Argentina.png"
+        "name": "Usuahia",
+        "country": "Argentina",
+        "region":"America",
+        "subregion":"South America",
+        "png": "/Places/Argentina.png",
+        "alt": "Lighthouse at the End of the World",
+        "description": "Ushuaia, known as the southernmost city in the world, is the capital of the Tierra del Fuego province that includes the Argentine arctic islands and the Islas Malvinas. It is a mystical land located on the bay of the largest island of the province.",
+        "currencies": "Peso Argentino",
+        "language": "Spanish"
       },
       {
         "id": 10,
-        "nombre": "Cartagena",
-        "pais": "Colombia",
-        "img": "/Places/Colombia.png"
+        "name": "Cartagena",
+        "country": "Colombia",
+        "region":"America",
+        "subregion":"Central America",
+        "png": "/Places/Colombia.png",
+        "alt": "colorful streets of the old town",
+        "description": "Cartagena, with more than 3,000 years of history, has been the scene of some of the most outstanding passages throughout time. This Punic, Roman, military and art nouveau city offers nowadays so many things to see and do that it has become one of the most appealing destinations in the Mediterranean area.",
+        "currencies": "Peso colombiano",
+        "language": "Spanish"
       },
       {
         "id": 11,
-        "nombre": "Rio de Janeiro",
-        "pais": "Brasil",
-        "img": "/Places/Brasil.png"
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "region":"America",
+        "subregion":"South America",
+        "png": "/Places/Brasil.png",
+        "alt": "Christ of Corcovado",
+        "description": "Rio de Janeiro boasts dramatic views from nearly every angle. From the slopes of Corcovado Mountain, you'll admire the striking 125-foot-tall Christ the Redeemer, who overlooks Rio's pristine beaches. And from the shores of. But there's much more to Rio than scenic vistas, tropical rainforests and cerulean seas.",
+        "currencies": "Real",
+        "language": "Portuguese"
       },
       {
         "id": 12,
-        "nombre": "New York",
-        "pais": "EEUU",
-        "img": "/Places/Eeuu.png"
+        "name": "New York",
+        "country": "EEUU",
+        "region":"America",
+        "subregion":"North America",
+        "png": "/Places/Eeuu.png",
+        "alt": "Cancun beach",
+        "description": "An iconic global centre that has inspired the world with its brilliant architecture, movies, and art. Also known as the Big Apple, New York is well-known for its magnificent skyscrapers, Broadway shows and beautiful landmarks, making it the perfect destination for travellers from all over.",
+        "currencies": "Dollar",
+        "language": "English"
+      },
+      {
+        "id": 13,
+        "name": "Cairo",
+        "country": "Egypt",
+        "region":"Africa",
+        "subregion":"Northeast Africa",
+        "png": "/Places/elCairo.png",
+        "alt": "Pyramids of Giza",
+        "description": "Cairo, the bustling capital of Egypt, is a city of contrasts, where ancient wonders coexist with modern skyscrapers and vibrant markets. With its rich history, diverse culture, and stunning architecture, Cairo offers visitors an unforgettable travel experience that is both captivating and enlightening.",
+        "currencies": "Egyptian Pound",
+        "language": "Arabic"
+      },
+      {
+        "id": 14,
+        "name": "Moscow",
+        "country": "Russia",
+        "region":"Europe",
+        "subregion":"Eastern Europe",
+        "png": "/Places/Moscu.png",
+        "alt": "saint basil's cathedral in red square",
+        "description": "Moscow, a city steeped in history and brimming with captivating attractions, is an enchanting destination for tourists from around the world. With its blend of ancient grandeur and modern vibrancy, Moscow offers a mesmerizing experience that appeals to all types of travelers",
+        "currencies": "Russian Rouble ",
+        "language": "Russian"
+      },
+      {
+        "id": 15,
+        "name": "Cancun",
+        "country": "Mexico",
+        "region":"America",
+        "subregion":"Central America",
+        "png": "/Places/Cancun.png",
+        "alt": "Cancun beach",
+        "description": "Cancun is a city in Mexico located on the Yucatan peninsula that borders the Caribbean Sea and is known for its beaches, numerous tourist centers, and nightlife. It is made up of 2 distinct areas: the more traditional downtown area and the Hotel Zone, a strip along the coast with high-rise hotels, nightclubs, shops, and restaurants. Cancun is also a popular destination for students during the spring break and Easter period.",
+        "currencies": "Peso Mexicano",
+        "language": "Spanish"
       }
-      
     ]
   }
