@@ -1,0 +1,22 @@
+.card{
+    height:644px;
+    width:384px;
+}
+.card-title{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+}
+.card-subtitle{
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card-text{
+    max-height: 6em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal; 
+}

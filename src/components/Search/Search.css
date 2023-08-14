@@ -1,0 +1,10 @@
+.contenedorBuscador{
+    margin: 1rem;
+    width: 100%;
+    display:grid;
+    place-items:center;
+}
+
+.contenedorBuscador input{
+    width: 80%;
+}

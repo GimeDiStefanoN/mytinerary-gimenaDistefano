@@ -2,15 +2,13 @@ import './Cities.css';
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import Loading from '../../components/Loading/Loading';
+import Search from '../../components/Search/Search';
 import Hero from '../../components/Hero/Hero';
+import Card from '../../components/Card/Card';
+import cities from '../../data/cities.json';
 
 const Cities = () => {
-  const cities = [
-    { id: 1 },
-    { id: 2 },
-    { id: 3 },
-    { id: 4 }
-]
+ 
   return (
     <div className="containViews">
         <Hero
@@ -20,19 +18,20 @@ const Cities = () => {
           showButton={false}
         />
 
-        <h2 className='subtitleView'>Web Under Construction </h2>
-
-        <Loading/>
+        <Search/>
 
         <div className="contenedorCards">
-          { cities.map((city) => {
+          {cities.cities.map((city) => {
             return (
               <Link key={city.id} to={`/cities/${city.id}`} className='containCard'>
-                      <div >
-                        <h4 className='titleCard'>Card City</h4>
-                        <Button text='Go'/> 
-                      </div>
-                  </Link>
+                <Card
+                png={city.png}
+                alt={city.alt}
+                name={city.name}
+                country={city.country}
+                description={city.description}
+                />
+              </Link>
                 )
               })
             }
