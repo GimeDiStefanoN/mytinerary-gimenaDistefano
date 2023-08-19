@@ -22,4 +22,16 @@
     justify-content: center;
     gap:1rem;
     margin:1.5rem
-    }
+}
+.contenedorBuscador{
+    margin: 1rem;
+    width: 100%;
+    display:grid;
+    place-items:center;
+}
+
+.contenedorBuscador input{
+    width: 80%;
+    font-size:1.5rem;
+    
+}

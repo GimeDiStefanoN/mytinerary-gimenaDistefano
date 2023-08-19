@@ -1,6 +1,6 @@
-.card{
-    height:644px;
-    width:384px;
+
+.card-body{
+    justify-content: space-between;
 }
 .card-title{
     font-size: 1.5rem;
@@ -19,4 +19,16 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: normal; 
+}
+.contenedorPais{
+    width:100%;
+    display:flex;
+    gap:0.8rem;
+}
+.card-actions{
+    width:45%;
+    height:25%
+}
+.card-actions button{
+    background-color: #d94052;
 }

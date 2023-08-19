@@ -3,10 +3,21 @@ import { useParams } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import Loading from '../../components/Loading/Loading';
+import { useEffect } from 'react';
 
 const CityDetail = () => {
-  const { id } = useParams();
+  const { id } = useParams(); //id de mi city
 
+
+  //tener una variable de estado p almacenar info de la city
+
+  useEffect(()=>{
+    //axios para traer info de 1 city
+    //usar ID  del user params
+  })
+
+  //utilizar la varuiable de estado para renderizar la info
+  
   return (
     <div className="containViews">
       <div className="containDetail">

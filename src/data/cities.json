@@ -10,7 +10,7 @@
         "alt": "Big Ben in London",
         "description": "London is rich in culture and history, from its tea culture and famous breakfast to numerous old buildings and streets dating from various periods. We've all heard of well-known Big Ben, Buckingham Palace, and Westminister Palate, but this city has much more to offer.",
         "currencies": "sterling",
-        "language": "English"
+        "languages": "English"
       },
       {
         "id": 2,
@@ -22,7 +22,7 @@
         "alt": "Santorini beach",
         "description": "The capital of Greece is full of ancient monuments, temples, ruins and churches. For lovers of ancient Greece, this city is a paradise. You really have to see the Acropolis. This hill in the middle of Athens has some of the most important archaeological monuments.",
         "currencies": "Euro",
-        "language": "Greek"
+        "languages": "Greek"
       },
       {
         "id": 3,
@@ -34,7 +34,7 @@
         "alt": "Colosseum",
         "description": "It has beautiful scenery ranging from its scenic coastal areas to its colourful mountain ranges. It has a vast wealth of culture, architecture and ancient sites. It has modern cities that embody contemporary Italy, and don't forget Italy's gifts to the world's taste buds, its wonderful cuisine and wines.",
         "currencies": "Euro",
-        "language": "Italian"
+        "languages": "Italian"
       },
       {
         "id": 4,
@@ -46,7 +46,7 @@
         "alt": "Eiffel Tower",
         "description": "You will find interesting museums, wonderful historic sites, places for shopping with fashionable goods in Paris. There are many great places for alpine skiing in the mountains. On the French Riviera (Côte d'Azur) tourists will meet warm Mediterranean Sea and mild climate.",
         "currencies": "Euro",
-        "language": "French"
+        "languages": "French"
       },
       {
         "id": 5,
@@ -58,7 +58,7 @@
         "alt": "hot air balloon ride at sunrise.",
         "description": "Cappadocia region is the place where nature and history come together most beautifully within the world. While geographic events are forming Peribacalari (fairy chimneys), during the historical period, humans had carried the signs of thousand years old civilizations with carving houses and churches within these earth pillars and decorating them with frisks.",
         "currencies": "Turkish lira",
-        "language": "Turkish"
+        "languages": "Turkish"
       },
       {
         "id": 6,
@@ -70,7 +70,7 @@
         "alt": "Ginza street",
         "description": "Tokyo is known for its fashion and shopping, from the trendy shopping districts of Harajuku and Shibuya, to the luxury flagships of Ginza. Shinjuku is the thriving business district; a mix of gleaming skyscrapers and atmospheric back streets with tiny bars.",
         "currencies": "Yen",
-        "language": "Japanese"
+        "languages": "Japanese"
       },
       {
         "id": 7,
@@ -82,7 +82,7 @@
         "alt": "Opera House",
         "description": "Sydney is its vibrant capital and the largest city in Australia. Marvel at the iconic Sydney Opera House and Sydney Harbour Bridge, catch the ferry to Manly, have a swim at Bondi Beach and stroll through the historic Rocks district.",
         "currencies": "Australian Dollar",
-        "language": "English"
+        "languages": "English"
       },
       {
         "id": 8,
@@ -94,7 +94,7 @@
         "alt": "chinese wall",
         "description": "Beijing is home to many national monuments and museums and has seven UNESCO World Heritage Sites—the Forbidden City, Temple of Heaven, Summer Palace, Ming Tombs, Zhoukoudian, and parts of the Great Wall and the Grand Canal",
         "currencies": "Yuan",
-        "language": "pekinés, Mandarin Chinese"
+        "languages": "pekinés, Mandarin Chinese"
       },
       {
         "id": 9,
@@ -106,7 +106,7 @@
         "alt": "Lighthouse at the End of the World",
         "description": "Ushuaia, known as the southernmost city in the world, is the capital of the Tierra del Fuego province that includes the Argentine arctic islands and the Islas Malvinas. It is a mystical land located on the bay of the largest island of the province.",
         "currencies": "Peso Argentino",
-        "language": "Spanish"
+        "languages": "Spanish"
       },
       {
         "id": 10,
@@ -118,7 +118,7 @@
         "alt": "colorful streets of the old town",
         "description": "Cartagena, with more than 3,000 years of history, has been the scene of some of the most outstanding passages throughout time. This Punic, Roman, military and art nouveau city offers nowadays so many things to see and do that it has become one of the most appealing destinations in the Mediterranean area.",
         "currencies": "Peso colombiano",
-        "language": "Spanish"
+        "languages": "Spanish"
       },
       {
         "id": 11,
@@ -130,7 +130,7 @@
         "alt": "Christ of Corcovado",
         "description": "Rio de Janeiro boasts dramatic views from nearly every angle. From the slopes of Corcovado Mountain, you'll admire the striking 125-foot-tall Christ the Redeemer, who overlooks Rio's pristine beaches. And from the shores of. But there's much more to Rio than scenic vistas, tropical rainforests and cerulean seas.",
         "currencies": "Real",
-        "language": "Portuguese"
+        "languages": "Portuguese"
       },
       {
         "id": 12,
@@ -142,7 +142,7 @@
         "alt": "Cancun beach",
         "description": "An iconic global centre that has inspired the world with its brilliant architecture, movies, and art. Also known as the Big Apple, New York is well-known for its magnificent skyscrapers, Broadway shows and beautiful landmarks, making it the perfect destination for travellers from all over.",
         "currencies": "Dollar",
-        "language": "English"
+        "languages": "English"
       },
       {
         "id": 13,
@@ -154,7 +154,7 @@
         "alt": "Pyramids of Giza",
         "description": "Cairo, the bustling capital of Egypt, is a city of contrasts, where ancient wonders coexist with modern skyscrapers and vibrant markets. With its rich history, diverse culture, and stunning architecture, Cairo offers visitors an unforgettable travel experience that is both captivating and enlightening.",
         "currencies": "Egyptian Pound",
-        "language": "Arabic"
+        "languages": "Arabic"
       },
       {
         "id": 14,
@@ -166,7 +166,7 @@
         "alt": "saint basil's cathedral in red square",
         "description": "Moscow, a city steeped in history and brimming with captivating attractions, is an enchanting destination for tourists from around the world. With its blend of ancient grandeur and modern vibrancy, Moscow offers a mesmerizing experience that appeals to all types of travelers",
         "currencies": "Russian Rouble ",
-        "language": "Russian"
+        "languages": "Russian"
       },
       {
         "id": 15,
@@ -178,7 +178,7 @@
         "alt": "Cancun beach",
         "description": "Cancun is a city in Mexico located on the Yucatan peninsula that borders the Caribbean Sea and is known for its beaches, numerous tourist centers, and nightlife. It is made up of 2 distinct areas: the more traditional downtown area and the Hotel Zone, a strip along the coast with high-rise hotels, nightclubs, shops, and restaurants. Cancun is also a popular destination for students during the spring break and Easter period.",
         "currencies": "Peso Mexicano",
-        "language": "Spanish"
+        "languages": "Spanish"
       }
     ]
   }
