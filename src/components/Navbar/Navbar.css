@@ -11,7 +11,8 @@
     height: 61px;
     line-height: 61px;
 }
-ul li:hover > .nav-link{
+
+li:hover > .nav-link{
     color: #A10B61;
     text-transform: scale(1.2);
 }

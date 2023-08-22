@@ -15,3 +15,68 @@
     font-weight: bold;
     cursor: pointer;
 }
+.containImg {
+    position: relative;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    width: 100%; 
+    height: 100vh; 
+    clip-path: ellipse(100% 90% at 50% 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.containText{
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+.titleView{
+    font-size: 2.2rem;
+    color: whitesmoke;
+  }
+  .description{
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    color: whitesmoke;
+
+  }
+  .btnItin{
+    text-align: center;
+    width:120px !important;
+  }
+
+    /* TABLET */
+@media (min-width: 710px) {
+  .btnItin{
+    
+    width:40%!important;
+  }
+}
+
+/* ESCRITORIO */
+@media (min-width: 1000px) {
+  .containImg {
+   
+    justify-content: space-around;   
+}
+  .containText{
+    padding:2rem;
+}
+  .titleView{
+    font-size: 4rem;
+  }
+
+  .description{
+    text-align: center;
+    padding:2rem 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+    color: whitesmoke;
+
+  }
+}

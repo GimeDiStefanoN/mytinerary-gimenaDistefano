@@ -7,7 +7,7 @@ function Navbar({ links }) {
             {links.map((link, index) => (
                 <li key={index} className="navbar-item">
                     {link.title === 'Login' ? (
-                        <Link className="" to={link.to}>
+                        <Link className="nav-link" to={link.to}>
                             <img src={link.icon} alt="Login Icon" className='Icons' />
                         </Link>
                     ) : (

@@ -25,13 +25,43 @@
 }
 .contenedorBuscador{
     margin: 1rem;
+    padding: 1rem;
     width: 100%;
+    
     display:grid;
     place-items:center;
 }
 
 .contenedorBuscador input{
     width: 80%;
+    height: 60px;
     font-size:1.5rem;
+    border: 2px solid rgb(196, 42, 196);
+    color:rgb(196, 42, 196)
     
+}
+.contenedorBuscador input::placeholder {
+    color:rgb(196, 42, 196);
+  }
+
+.cities-titleHero {
+    font-size: 4rem;
+  }
+  
+  .cities-textHero {
+    font-size: 1.5rem;
+  }
+
+  .errorMsgCity{
+    color: red;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  /* TABLET */
+@media (min-width: 710px) {
+}
+
+/* ESCRITORIO */
+@media (min-width: 1000px) {
 }

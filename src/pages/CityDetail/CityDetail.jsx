@@ -1,40 +1,66 @@
+
 import './CityDetail.css';
-import { useParams } from "react-router-dom";
-import { Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Button from '../../components/Button/Button';
 import Loading from '../../components/Loading/Loading';
-import { useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+import axios from 'axios';
 
 const CityDetail = () => {
-  const { id } = useParams(); //id de mi city
+  const { id } = useParams();
 
+  const [cityData, setCityData] = useState(null);
+  const [loading, setLoading] = useState(true);
 
-  //tener una variable de estado p almacenar info de la city
+  useEffect(() => {
+    axios.get(`http://localhost:8000/api/cities/${id}`)
+      .then((response) => {
+        setCityData(response.data.oneCity); 
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        setLoading(false);
+      });
+  }, [id]);
 
-  useEffect(()=>{
-    //axios para traer info de 1 city
-    //usar ID  del user params
-  })
+  const itinerariesSection = useRef()
+  const scrollToItineraries = () => {
+    console.log('Botón "View Itineraries" clickeado');
+    itinerariesSection.current.scrollIntoView({ behavior: 'smooth' })
+  }
 
-  //utilizar la varuiable de estado para renderizar la info
-  
   return (
     <div className="containViews">
       <div className="containDetail">
-        <h1 className='titleView'>City Detail</h1>
+        {loading ? (
+          <Loading />
+        ) : (
+          <div className="containImg" style={{backgroundImage: `url(${cityData.png})`}}>
+            <div className="containText">
+            <h1 className="titleView">{cityData.name}</h1>
+            <div className="textDesc">
+              <p className="description">{cityData.description}</p>
+            </div>
 
-        <h2 className='subtitleView'>Web Under Construction </h2>
+            </div>
+            <Button  btnItinClassName="btnItin" text="View Itineraries" onClick={scrollToItineraries}/>
+          </div>
+        )}
 
-        <Loading />
+        <div className="itinerariesSection" ref={itinerariesSection}>
 
-        <h3>City # {id}</h3>
+        <h2 className="subtitleView" id="itineraries">Web Under Construction</h2>
+
+          <Loading/>
+        </div>
 
         <Link to={'/cities'}>
-          <Button text='Back to Cities' />
+          <Button text="Back to Cities" />
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default CityDetail
+export default CityDetail;
