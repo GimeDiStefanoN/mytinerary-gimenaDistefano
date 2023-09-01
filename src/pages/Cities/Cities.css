@@ -23,13 +23,16 @@
     gap:1rem;
     margin:1.5rem
 }
+.form-control{
+  flex-direction:row !important;
+}
 .contenedorBuscador{
     margin: 1rem;
     padding: 1rem;
     width: 100%;
-    
-    display:grid;
-    place-items:center;
+    display:flex;
+    justify-content:center;
+    gap:0.3rem
 }
 
 .contenedorBuscador input{
@@ -40,6 +43,15 @@
     color:rgb(196, 42, 196)
     
 }
+
+.lupa{
+  width: 4rem;
+  height: 60px;
+  border: 2px solid rgb(196, 42, 196);
+  border-radius: 5px;
+  padding:5px
+}
+
 .contenedorBuscador input::placeholder {
     color:rgb(196, 42, 196);
   }

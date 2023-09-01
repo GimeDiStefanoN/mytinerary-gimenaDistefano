@@ -35,6 +35,80 @@
     font-size: 2.2rem;
     color: whitesmoke;
   }
+.titleSection{
+  color: #A10B61;
+  text-align: center;
+  font-size: 2rem !important;
+  margin: 1rem 0;
+}
+.containsIt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.conetenedorItinerary{
+  border: 1px solid grey;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 340px;
+  height: auto;
+}
+.titleItinerary{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.contTitleIti{
+  display:flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+.likes{
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.5rem;
+  color: #c42ac4
+}
+
+.contDatosIti{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:2rem;
+  border: 0.2px solid pink;
+  border-radius: 5px;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+}
+.parte1{
+  display: flex;
+  gap: 2rem;
+  justify-content:space-around ;
+}
+.precio{
+  display: flex;
+  align-items: center;
+  gap:0.8rem
+}
+.iconPrecio{
+  display: flex;
+  gap: 0.3rem;
+}
+.horas{
+  font-weight: bold;
+}
+.parte2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.name{
+  font-size: 2rem;
+}
+
   .description{
     text-align: center;
     padding: 1rem;
@@ -47,7 +121,76 @@
     text-align: center;
     width:120px !important;
   }
+  .hashtags{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .containHash{
+    display: flex;
+    gap: 10px;
+  }
+  .allComments{
+    border: 0.5px solid rgb(255, 240, 255);
+    border-radius: 5px;
+  }
+.muralComments{
+  overflow: hidden;
+  background-color: rgb(255, 240, 255);
+}
+.muralComments {
+  padding: 1rem;
+  
+}
+.muralComments input{
+  width: 100%;
+}
+.onlyComments{
+  overflow-y: scroll;
+  height: 300px;
+}
+.oneComment{
+  padding: 1rem 0.5rem;
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  margin: 1rem 0
 
+}
+.datosPersona{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.6rem;
+}
+.datosPersona .name{
+    font-size: 1.3rem;
+}
+
+.contenedorActivities{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.contenedorActivities .card-body p{
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.imgActivity{
+  width: 100%;
+  filter: invert(0.9);
+}
+.containInput{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.iconEnviar{
+  font-size: 1.5rem ;
+}
     /* TABLET */
 @media (min-width: 710px) {
   .btnItin{
@@ -79,4 +222,30 @@
     color: whitesmoke;
 
   }
+  .itinerariesSection{
+    width: 100%;
+  }
+
+  .titleItinerary{
+    font-size: 2rem;
+  }
+  .conetenedorItinerary{
+  width: 98%;
+  height: auto;
+}
+.contDatosIti{
+  flex-direction: row;
+  justify-content: space-around;
+}
+.parte1{
+  flex-direction: column;
+}
+.contenedorActivities{
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem;
+}
+.contenedorActivities .card{
+  width: 200px;
+}
 }

@@ -3,16 +3,20 @@ import { Link } from 'react-router-dom';
 import Loading from '../../components/Loading/Loading';
 import Hero from '../../components/Hero/Hero';
 import Card from '../../components/Card/Card';
-import Searcher from '../../components/Searcher/Searcher';
+//import Searcher from '../../components/Searcher/Searcher';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+
 
 const Cities = () => {
- const [cities, setCities]= useState();
- const [errorCity, setErrorCity] = useState(false); 
- const [loading, setLoading] = useState(true); 
- useEffect(() => {
-  axios.get('http://localhost:8000/api/cities?name=')
+  const [cities, setCities]= useState();
+  const [errorCity, setErrorCity] = useState(false); 
+  const [loading, setLoading] = useState(true); 
+  const [searchValue, setSearchValue] = useState('');
+  let inputSearch =useRef();
+  
+  useEffect(() => {
+    axios.get('http://localhost:8000/api/cities?name=')
     .then((res) => {
       setCities(res.data.allCities);
       setErrorCity(false);
@@ -25,28 +29,31 @@ const Cities = () => {
       setErrorCity(true);
       setLoading(false);
     });
-}, []);
-
-
-const handleInputChange= async (e) =>{
-  const value = e.target.value.trim(); 
-  console.log(value);
-
-  try {
-    const response = await axios.get(`http://localhost:8000/api/cities?name=${value}`);
-    setCities(response.data.allCities);
-    setErrorCity(false);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-  } catch (err) {
-    console.log(err);
-    setErrorCity(true);
-    setLoading(false);
-  }
-};
-
-
+  }, []);
+  
+  
+  const handleInputChange= async () =>{
+    const value = inputSearch.current.value.trim(); 
+    console.log(value);
+    console.log();
+    try {
+      const response = await axios.get(`http://localhost:8000/api/cities?name=${value}`);
+      setCities(response.data.allCities);
+      setErrorCity(false);
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    } catch (err) {
+      if(err.response.status ===404){
+        setErrorCity(true);
+        setLoading(false);
+      }else{
+        console.log(err);
+      }
+    }
+  };
+  
+  
   return (
     <div className="containViews">
         <Hero
@@ -56,10 +63,26 @@ const handleInputChange= async (e) =>{
           showButton={false}
           titleHeroClassName="cities-titleHero" 
           textHeroClassName="cities-textHero"   
-        />
+          />
 
         <div className="form-control contenedorBuscador">
-            <input type="text" placeholder="Search your City" className="input input-bordered w-24 md:w-auto" onChange={handleInputChange}/>
+          
+            <input 
+              ref={inputSearch}
+              type="text" 
+              placeholder="Search your City" 
+              className="input input-bordered w-24 md:w-auto" 
+              value={searchValue}  
+              onChange={(e) => setSearchValue(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  handleInputChange();
+                }
+              }}
+              /> 
+            <button onClick={handleInputChange}>  
+              <img  className='lupa' src="/Icons/magnifying-glass-solid.svg" alt="" />
+            </button>
         </div>
 
         
