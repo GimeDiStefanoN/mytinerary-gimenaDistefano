@@ -2,15 +2,21 @@ import Logo from '/Logo.png';
 import './Header.css';
 import Navbar from '../Navbar/Navbar';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function Header() {
+
+    const photo = useSelector(store => store.userReducer.photo)
+
+
     const linksForNavbar1 = [
         { title: 'Home', to: '/' },
         { title: 'Cities', to: '/cities' },
-        { title: 'Login', to: '/login', icon: '/Icons/avatarLogin.png' },
+        { title: 'Login', to: '/login', icon: photo },
         { title: 'SignUp', to: '/signup' }
     ];
 
+    
     return (
         <>
             <header>

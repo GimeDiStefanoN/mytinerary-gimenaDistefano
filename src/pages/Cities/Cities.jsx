@@ -3,54 +3,27 @@ import { Link } from 'react-router-dom';
 import Loading from '../../components/Loading/Loading';
 import Hero from '../../components/Hero/Hero';
 import Card from '../../components/Card/Card';
-//import Searcher from '../../components/Searcher/Searcher';
-import axios from 'axios';
 import { useEffect, useState, useRef } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { filter_cities, get_cities } from '../../store/actions/cityActions'
 
 
 const Cities = () => {
-  const [cities, setCities]= useState();
-  const [errorCity, setErrorCity] = useState(false); 
-  const [loading, setLoading] = useState(true); 
+  
   const [searchValue, setSearchValue] = useState('');
   let inputSearch =useRef();
+  const cities = useSelector((store)=> store.cityReducer.cities);
+  const dispatch = useDispatch();
+  const loading = useSelector((state) => state.cityReducer.loading);
+  const errorCity = useSelector((state) => state.cityReducer.error);
   
   useEffect(() => {
-    axios.get('http://localhost:8000/api/cities?name=')
-    .then((res) => {
-      setCities(res.data.allCities);
-      setErrorCity(false);
-      setTimeout(() => {
-        setLoading(false);
-      }, 2000);
-    })
-    .catch((err) => {
-      console.log(err);
-      setErrorCity(true);
-      setLoading(false);
-    });
-  }, []);
+    dispatch(get_cities())
+  }, [dispatch]);
   
   
-  const handleInputChange= async () =>{
-    const value = inputSearch.current.value.trim(); 
-    console.log(value);
-    console.log();
-    try {
-      const response = await axios.get(`http://localhost:8000/api/cities?name=${value}`);
-      setCities(response.data.allCities);
-      setErrorCity(false);
-      setTimeout(() => {
-        setLoading(false);
-      }, 2000);
-    } catch (err) {
-      if(err.response.status ===404){
-        setErrorCity(true);
-        setLoading(false);
-      }else{
-        console.log(err);
-      }
-    }
+  const handleInputChange= () =>{
+    dispatch(filter_cities({ value: inputSearch.current.value.trim()}))
   };
   
   
@@ -90,7 +63,7 @@ const Cities = () => {
         <div className="contenedorCards">
         {loading ? (
           <Loading /> 
-        ) : (
+        ) : 
           errorCity ? (
             <p className='errorMsgCity'>No city found 😕</p>
           ) : (
@@ -108,7 +81,7 @@ const Cities = () => {
                   )
                 }))
 
-        )}
+        }
           
             
         </div>

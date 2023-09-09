@@ -21,7 +21,7 @@ li:hover > .nav-link{
     height: 61px
 }
 .Icons{
-    filter: invert(1);
+    //filter: invert(1);
     height: 50px;
 
 }
