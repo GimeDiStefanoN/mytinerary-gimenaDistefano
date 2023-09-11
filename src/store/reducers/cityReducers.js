@@ -3,7 +3,6 @@ import { get_cities, filter_cities } from '../actions/cityActions'
 
 const initialState = {
     cities: [],
-    loading: false,
     error: false 
 }
 

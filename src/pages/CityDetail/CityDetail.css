@@ -47,6 +47,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  padding:1rem
 }
 .conetenedorItinerary{
   border: 1px solid grey;
