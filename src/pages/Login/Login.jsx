@@ -29,8 +29,8 @@ const Login = () => {
 
         <div className="form-control">
           <label className="input-group input-group-md">
-            <span>Name</span>
-            <input type="text" placeholder="Type your name" className="input input-bordered input-md" />
+            <span>Email</span>
+            <input type="text" placeholder="example@domain.com" className="input input-bordered input-md" />
           </label>
         </div>
         <div className="form-control">
