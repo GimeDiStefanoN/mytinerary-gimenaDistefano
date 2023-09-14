@@ -13,7 +13,8 @@ function Header() {
         { title: 'Home', to: '/' },
         { title: 'Cities', to: '/cities' },
         { title: 'Login', to: '/login', icon: photo },
-        { title: 'SignUp', to: '/signup' }
+        { title: 'SignUp', to: '/signup' },
+        { title: 'SignOut' }
     ];
 
     

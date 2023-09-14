@@ -1,7 +1,81 @@
+body{
+    background-image: url('https://img.freepik.com/foto-gratis/composicion-avion-pasaporte-autobus-aviones-pequenos_23-2148169874.jpg');
+    background-repeat: no-repeat; /* Evitar la repetición */
+    background-size: cover; 
+}
 .formLogin{
     display:flex;
     flex-direction: column;
     align-items: center;
     gap:1rem;
     padding: 1rem;
+}
+.containFormLogin{
+    border: 1px solid grey;
+    border-radius:1rem;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    width:80%;
+    height: 60vh;
+    margin: 2rem auto;
+    
+}
+.form-control{
+    width:100%
+}
+
+.input-group > :first-child {
+    width: 30%;
+}
+.input-group > :last-child {
+    width: 70%;
+}
+
+.titleSection{
+  color: #A10B61;
+  text-align: center;
+  font-size: 2rem !important;
+  margin: 1rem 0;
+}
+
+.formLogin > button{
+    background-color: #A10B61 ;
+    color: whitesmoke
+}
+
+.textForm{
+    margin:1rem;
+    text-align:center
+}
+.textForm b:hover{
+    cursor: pointer;
+    color: #A10B61;
+}
+
+/* Base styles */
+.or::before,
+.or::after {
+    content: "";
+}
+.or--x::before,
+.or--x::after {
+    position: relative;
+    border-top: 1px solid black;
+    display: inline-block;
+    vertical-align: middle;
+    width: 50%;
+    margin-bottom: 0.15em;
+    overflow: hidden;
+}
+
+.or--x::before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+
+.or--x::after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+.demo .or--x {
+    max-width: 30em;
 }

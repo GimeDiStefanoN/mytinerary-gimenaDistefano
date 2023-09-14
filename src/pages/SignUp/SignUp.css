@@ -1,0 +1,41 @@
+
+
+.titleSection{
+  color: #A10B61;
+  text-align: center;
+  font-size: 2rem !important;
+  margin: 1rem 0;
+}
+
+.formLogin > button{
+    background-color: #A10B61 ;
+    color: whitesmoke
+}
+.form-control{
+    width:100%
+}
+.input-group > :first-child {
+    width: 30%;
+}
+.input-group > :last-child {
+    width: 70% !important;
+}
+.form-control .input-group .select{
+  width:100%
+}
+.textForm{
+    margin:1rem;
+    text-align:center
+}
+.textForm b:hover{
+    cursor: pointer;
+    color: #A10B61;
+}
+.containForm{
+    border: 1px solid grey;
+    border-radius:1rem;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    width:80%;
+    margin: 2rem auto;
+    
+}
